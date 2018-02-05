@@ -1,0 +1,172 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1561\cocoasubrtf200
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\b\fs24 \cf0 GIT commands (from terminal):
+\b0 \
+\
+
+\b git config --global user.name \'91Ur Name\'92
+\b0 \
+#configures git with user name\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\b \cf0 git config --global user.email \'91Ur email\'92
+\b0 \
+#configures git with user email\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+
+\b git init 
+\b0 \
+# initialise repository .git (hidden)\
+\
+
+\b rm -rf .git 	
+\b0 \
+# delete repository .git\
+\
+
+\b git status 	
+\b0 \
+# tells the status of the .git repository and the current branch (if there is any)\
+\
+
+\b git add option
+\b0 \
+# use one of the following options to git add command:\
+\
+
+\b filename.ext 
+\b0 \
+# add current version of filename.ext to .git repository (staging)\
+\
+
+\b . 
+\b0 \
+#add everything to .git repository\
+\
+
+\b *.html 
+\b0 \
+# add every .html file\
+\
+
+\b .gitignore 
+\b0 \
+# file where we specify extensions of files to be ignored when using \'93git add . \'93 command\
+#NB: the .gitignore file must be committed\
+\
+
+\b git commit
+\b0 \
+#opens something like a wizard to commit changes:\
+\
+
+\b I
+\b0  \
+#Insert\
+#ignore all comments, write:\
+\
+
+\b initial commit
+\b0 \
+#is a comment for initial commitment, can be anything and it is used to keep track of commitments\
+\
+
+\b esc \
+
+\b0 # exit insert command\
+\
+
+\b :wq
+\b0 \
+# write and quit to save commit\
+\
+\
+
+\b git commit -m \'91Comment\'92\
+
+\b0 #commits the changed files adding comment in \'91 \'92 (faster than manually insert comments into git #commit command wizard\
+\
+
+\b git log \
+
+\b0 # tells the history of commitments \
+\
+
+\b git branch BranchName \
+
+\b0 # creates a new branch named BranchName\
+\
+
+\b git checkout BranchName \
+
+\b0 # tells the status of the branch selected and switch to that branch\
+\
+
+\b git merge SourceBranch \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\b0 \cf0 # merges the contents of SourceBranch to CurrentBranch where we are\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 #when merging watch out for merge conflict and consider using a merge tool\
+\
+
+\b git stash \
+
+\b0 # saves temporary the changes in cache out of a branch before merging\
+\
+
+\b git stash apply\
+
+\b0 #returns the changes from memory to the branch\
+\
+
+\b git remote \
+
+\b0 #returns the remote repository that we have \
+#NB: in the remote repository downloaded it shows \'93origin\'94 which is the origin of the folder (e.g. URL) \
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\b \cf0 git remote -v\
+
+\b0 #returns the source (URL) of the remote repository with <fetch> or <push> options\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+
+\b git clone URL\
+
+\b0 #clones the remote repository to local .git repository\
+\
+
+\b git fetch origin\
+
+\b0 # gets any changes from remote repository and puts it into the local one but doesn\'92t merge it to current branch\
+\
+
+\b git pull origin\
+
+\b0 # fetch and merges the remote repository into current branch\
+\
+
+\b git push origin CurrentBranchName\
+
+\b0 #push the committed changes of the work in local branch to remote repository\
+#push command will require you credentials of the account\
+\
+
+\b git remote add NewRepository URL\
+
+\b0 #adds a repository to the specified URL\
+\
+\
+\
+\
+\
+}
